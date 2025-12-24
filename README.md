@@ -1,69 +1,46 @@
-# React + TypeScript + Vite
+# Pomodoro Timer ⏱️🍅
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Pomodoro-based timer application built with **React** to help users improve focus and productivity using the Pomodoro Technique.
 
-Currently, two official plugins are available:
+## 📌 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a web application that implements the **Pomodoro Technique**, a time management method that alternates periods of focused work with short breaks. The application allows users to start, pause, reset, and track focus sessions in a simple and intuitive interface.
 
-## Expanding the ESLint configuration
+The main goal of this project is to practice and demonstrate modern **React** concepts, clean component architecture, state management with Context API, and responsive styling.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Technologies Used
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** – Component-based UI library  
+- **Vite** – Fast build tool and development server  
+- **React Context API** – Global state management  
+- **React Router** – Client-side routing  
+- **Tailwind CSS** – Utility-first CSS framework  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ✨ Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Pomodoro timer with focus and break cycles  
+- Start, pause, and reset timer controls  
+- Global state management using Context API  
+- Page navigation using React Router  
+- Responsive and modern UI with Tailwind CSS  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧠 Concepts Applied
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Functional components and hooks  
+- Context API for shared state  
+- Component reusability and separation of concerns  
+- Routing in Single Page Applications (SPA)  
+- Utility-first styling with Tailwind CSS  
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Project Structure
+
+The project follows a modular and scalable structure, separating concerns such as components, contexts, pages, and routes to ensure maintainability and readability.
+
+## ▶️ Getting Started
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone https://github.dev/davihchagas/chronos-pomodoro
+cd pomodoro-timer
+npm install
